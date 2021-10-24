@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo list</title>
+    <link rel="stylesheet" href="./index.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <header>
+        <h1>Your To Do list</h1>
+    </header>
+
+    <div class="container">
+            <input type="text" class="input" placeholder="Thêm công việc">
+            
+            <button id="add" class="button"><i class="far fa-plus-square"></i></button>
+    </div>
+
+
+    <div class="toDo-container">
+        <table class="toDo-list">
+
+        </table>
+    </div>
+
+   <div class="bg-modal">
+       <div class="modal-content">
+           <div class="close">+</div>
+           <input type="text" placeholder="Chỉnh sửa" class="newVal">
+           <button class="save"><i class="fas fa-pen-square"></i> Lưu chỉnh sửa</button>
+       </div>
+   </div>
+    
+   <div class="clearAll">
+        <span>Bạn hiện đang có <span class="count">0</span> công việc cần làm</span>
+       <button class="deleteAll">Delete all</button>
+   </div>
+
+</body>
+    <script src="./data.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</html>
